@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://bn0fjcusgchy2"]
+
+[ext_resource type="Script" uid="uid://baxcjapxtdt5c" path="res://gameplay/gameplay.gd" id="1_41n4r"]
+[ext_resource type="Script" uid="uid://db5km568fds6m" path="res://system/dialogue.gd" id="1_nyvx4"]
+
+[node name="Gameplay" type="Control" unique_id=1009020929]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_41n4r")
+
+[node name="Person1" type="Button" parent="." unique_id=532191878]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 173.0
+offset_top = 210.0
+offset_right = 249.0
+offset_bottom = 241.0
+text = "Person 1"
+
+[node name="Person2" type="Button" parent="." unique_id=1680062873]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 363.0
+offset_top = 351.0
+offset_right = 439.0
+offset_bottom = 382.0
+text = "Person 2"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1259565456]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -386.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=1510549329]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer" unique_id=649985169]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Options" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer" unique_id=1302313535]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=2100475848]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Option1" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=292579578]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Option 1"
+
+[node name="Option2" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1104769962]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Option 2"
+
+[node name="Dialogue" type="Node" parent="MarginContainer/PanelContainer" unique_id=1293488405 node_paths=PackedStringArray("label")]
+unique_name_in_owner = true
+script = ExtResource("1_nyvx4")
+label = NodePath("../MarginContainer/Options/Label")
