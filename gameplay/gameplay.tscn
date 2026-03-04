@@ -2,6 +2,13 @@
 
 [ext_resource type="Script" uid="uid://baxcjapxtdt5c" path="res://gameplay/gameplay.gd" id="1_41n4r"]
 [ext_resource type="Script" uid="uid://db5km568fds6m" path="res://system/dialogue.gd" id="1_nyvx4"]
+[ext_resource type="Script" uid="uid://b3nchrelsy3go" path="res://gameplay/components/candidate.gd" id="2_ueusv"]
+[ext_resource type="Resource" uid="uid://ry47ld8jm0gx" path="res://contents/Candidate1.tres" id="3_yvprt"]
+[ext_resource type="Resource" uid="uid://c2dlk73xvuu36" path="res://contents/Candidate2.tres" id="4_r5as3"]
+[ext_resource type="Resource" uid="uid://bo8dchgmady41" path="res://contents/Candidate3.tres" id="5_nimes"]
+[ext_resource type="Resource" uid="uid://cnvs5aydtk4g3" path="res://contents/Candidate4.tres" id="6_2okcp"]
+[ext_resource type="Resource" uid="uid://bx7e40hxn3630" path="res://contents/Candidate5.tres" id="7_vyivm"]
+[ext_resource type="Script" uid="uid://dge6jk2puryar" path="res://gameplay/components/option.gd" id="8_r5as3"]
 
 [node name="Gameplay" type="Control" unique_id=1009020929]
 layout_mode = 3
@@ -12,7 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_41n4r")
 
-[node name="Person1" type="Button" parent="." unique_id=532191878]
+[node name="Person1" type="Button" parent="." unique_id=1066751512]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 173.0
@@ -20,8 +27,11 @@ offset_top = 210.0
 offset_right = 249.0
 offset_bottom = 241.0
 text = "Person 1"
+script = ExtResource("2_ueusv")
+data = ExtResource("3_yvprt")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
 
-[node name="Person2" type="Button" parent="." unique_id=1680062873]
+[node name="Person2" type="Button" parent="." unique_id=1039517394]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 363.0
@@ -29,6 +39,45 @@ offset_top = 351.0
 offset_right = 439.0
 offset_bottom = 382.0
 text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("4_r5as3")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="Person3" type="Button" parent="." unique_id=1168119716]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 461.0
+offset_top = 219.0
+offset_right = 537.0
+offset_bottom = 250.0
+text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("5_nimes")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="Person4" type="Button" parent="." unique_id=1220695094]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 107.0
+offset_top = 419.0
+offset_right = 183.0
+offset_bottom = 450.0
+text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("6_2okcp")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="Person5" type="Button" parent="." unique_id=897581691]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 434.0
+offset_top = 511.0
+offset_right = 510.0
+offset_bottom = 542.0
+text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("7_vyivm")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1259565456]
 layout_mode = 1
@@ -59,18 +108,50 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=2100475848]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
 size_flags_vertical = 3
+autowrap_mode = 3
 
-[node name="Option1" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=292579578]
+[node name="Option1" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=431362580]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Option 1"
+script = ExtResource("8_r5as3")
+id = 1
+metadata/_custom_type_script = "uid://dge6jk2puryar"
 
-[node name="Option2" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1104769962]
+[node name="Option2" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1984692847]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Option 2"
+script = ExtResource("8_r5as3")
+id = 2
+metadata/_custom_type_script = "uid://dge6jk2puryar"
+
+[node name="Option3" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1866058970]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Option 3"
+script = ExtResource("8_r5as3")
+id = 3
+metadata/_custom_type_script = "uid://dge6jk2puryar"
+
+[node name="Option4" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1342522610]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Option 4"
+script = ExtResource("8_r5as3")
+id = 4
+metadata/_custom_type_script = "uid://dge6jk2puryar"
+
+[node name="Option5" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1689095254]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Option 5"
+script = ExtResource("8_r5as3")
+id = 5
+metadata/_custom_type_script = "uid://dge6jk2puryar"
 
 [node name="Dialogue" type="Node" parent="MarginContainer/PanelContainer" unique_id=1293488405 node_paths=PackedStringArray("label")]
 unique_name_in_owner = true

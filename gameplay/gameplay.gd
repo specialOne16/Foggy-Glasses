@@ -1,62 +1,43 @@
 extends Control
 
-const PERSON_1_DIALOGUE: Array[String] = ["Person 1 is talking"]
-const PERSON_2_DIALOGUE: Array[String] = ["Person 2 is talking"]
-
-const PERSON_1_DIALOGUE_OPTION_1: Array[String] = ["Person 1 is responding to option 1"]
-const PERSON_1_DIALOGUE_OPTION_2: Array[String] = ["Person 1 is responding to option 2"]
-
-const PERSON_2_DIALOGUE_OPTION_1: Array[String] = ["Person 2 is responding to option 1"]
-const PERSON_2_DIALOGUE_OPTION_2: Array[String] = ["Person 2 is responding to option 2"]
-
-@onready var person_1: Button = %Person1
-@onready var person_2: Button = %Person2
-@onready var option_1: Button = %Option1
-@onready var option_2: Button = %Option2
-
 @onready var label: Label = %Label
 @onready var dialogue: Dialogue = %Dialogue
 
-var active_person = 0
+var active_person: CandidateData
+var sequence_number = 1
+var success_exchange = 0
 
 func _ready() -> void:
-	person_1.pressed.connect(person1)
-	person_2.pressed.connect(person2)
-	dialogue.sequence_finished.connect(func():
-		option_1.visible = true
-		option_2.visible = true
-	)
+	for person in [%Person1, %Person2, %Person3, %Person4, %Person5]:
+		person.candidate_selected.connect(_candidate_selected)
 	
-	option_1.pressed.connect(option1)
-	option_2.pressed.connect(option2)
+	dialogue.sequence_finished.connect(_toggle_options.bind(true))
 	
-	option_1.visible = false
-	option_2.visible = false
+	for option in [%Option1, %Option2, %Option3, %Option4, %Option5]:
+		option.pressed.connect(_option_selected.bind(option))
+		option.visible = false
 
-func person1():
-	active_person = 1
-	option_1.visible = false
-	option_2.visible = false
-	dialogue.start_dialogue_sequence(PERSON_1_DIALOGUE)
+func _candidate_selected(data: CandidateData):
+	active_person = data
+	sequence_number = 1
+	
+	_toggle_options(false)
+	dialogue.start_dialogue_sequence(active_person.get_dialogue(sequence_number))
 
-func person2():
-	active_person = 2
-	option_1.visible = false
-	option_2.visible = false
-	dialogue.start_dialogue_sequence(PERSON_2_DIALOGUE)
-
-func option1():
-	option_1.visible = false
-	option_2.visible = false
-	if active_person == 1:
-		dialogue.start_dialogue_sequence(PERSON_1_DIALOGUE_OPTION_1)
+func _option_selected(option: Option):
+	_toggle_options(false)
+	if active_person.is_exchange_success(sequence_number, option.id):
+		success_exchange += 1
+	
+	if sequence_number < 5:
+		sequence_number += 1
+		dialogue.start_dialogue_sequence(active_person.get_dialogue(sequence_number))
 	else:
-		dialogue.start_dialogue_sequence(PERSON_2_DIALOGUE_OPTION_1)
+		active_person = null
+		dialogue.start_dialogue_sequence(["%d errors" % (5 - success_exchange)])
 
-func option2():
-	option_1.visible = false
-	option_2.visible = false
-	if active_person == 1:
-		dialogue.start_dialogue_sequence(PERSON_1_DIALOGUE_OPTION_2)
-	else:
-		dialogue.start_dialogue_sequence(PERSON_2_DIALOGUE_OPTION_2)
+func _toggle_options(option_visible: bool):
+	if active_person == null: return
+	
+	for option in [%Option1, %Option2, %Option3, %Option4, %Option5]:
+		option.visible = option_visible
