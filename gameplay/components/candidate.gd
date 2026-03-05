@@ -1,11 +1,11 @@
 extends Button
 class_name Candidate
 
-signal candidate_selected(data: CandidateData)
+signal candidate_selected(data: Candidate)
 
 @export var data: CandidateData
 
 func _ready() -> void:
-	pressed.connect(func(): candidate_selected.emit(data))
+	pressed.connect(func(): candidate_selected.emit(self))
 	
 	text = data.candidate_name

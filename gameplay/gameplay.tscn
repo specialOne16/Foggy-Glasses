@@ -19,101 +19,55 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_41n4r")
 
-[node name="Person1" type="Button" parent="." unique_id=1066751512]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 173.0
-offset_top = 210.0
-offset_right = 249.0
-offset_bottom = 241.0
-text = "Person 1"
-script = ExtResource("2_ueusv")
-data = ExtResource("3_yvprt")
-metadata/_custom_type_script = "uid://b3nchrelsy3go"
-
-[node name="Person2" type="Button" parent="." unique_id=1039517394]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 363.0
-offset_top = 351.0
-offset_right = 439.0
-offset_bottom = 382.0
-text = "Person 2"
-script = ExtResource("2_ueusv")
-data = ExtResource("4_r5as3")
-metadata/_custom_type_script = "uid://b3nchrelsy3go"
-
-[node name="Person3" type="Button" parent="." unique_id=1168119716]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 461.0
-offset_top = 219.0
-offset_right = 537.0
-offset_bottom = 250.0
-text = "Person 2"
-script = ExtResource("2_ueusv")
-data = ExtResource("5_nimes")
-metadata/_custom_type_script = "uid://b3nchrelsy3go"
-
-[node name="Person4" type="Button" parent="." unique_id=1220695094]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 107.0
-offset_top = 419.0
-offset_right = 183.0
-offset_bottom = 450.0
-text = "Person 2"
-script = ExtResource("2_ueusv")
-data = ExtResource("6_2okcp")
-metadata/_custom_type_script = "uid://b3nchrelsy3go"
-
-[node name="Person5" type="Button" parent="." unique_id=897581691]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 434.0
-offset_top = 511.0
-offset_right = 510.0
-offset_bottom = 542.0
-text = "Person 2"
-script = ExtResource("2_ueusv")
-data = ExtResource("7_vyivm")
-metadata/_custom_type_script = "uid://b3nchrelsy3go"
-
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1259565456]
 layout_mode = 1
-anchors_preset = 11
-anchor_left = 1.0
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -386.0
-grow_horizontal = 0
+grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
-[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=1510549329]
+[node name="Control" type="Control" parent="MarginContainer" unique_id=944719437]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer" unique_id=649985169]
+[node name="NervousnessBar" type="ProgressBar" parent="MarginContainer/Control" unique_id=312187892]
+unique_name_in_owner = true
+layout_mode = 1
+offset_right = 307.0
+offset_bottom = 27.0
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/Control" unique_id=1510549329]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -364.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Control/PanelContainer" unique_id=649985169]
 layout_mode = 2
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
-[node name="Options" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer" unique_id=1302313535]
+[node name="Options" type="VBoxContainer" parent="MarginContainer/Control/PanelContainer/MarginContainer" unique_id=1302313535]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=2100475848]
+[node name="Label" type="Label" parent="MarginContainer/Control/PanelContainer/MarginContainer/Options" unique_id=2100475848]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
 size_flags_vertical = 3
 autowrap_mode = 3
 
-[node name="Option1" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=431362580]
+[node name="Option1" type="Button" parent="MarginContainer/Control/PanelContainer/MarginContainer/Options" unique_id=431362580]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Option 1"
@@ -121,7 +75,7 @@ script = ExtResource("8_r5as3")
 id = 1
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
-[node name="Option2" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1984692847]
+[node name="Option2" type="Button" parent="MarginContainer/Control/PanelContainer/MarginContainer/Options" unique_id=1984692847]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Option 2"
@@ -129,7 +83,7 @@ script = ExtResource("8_r5as3")
 id = 2
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
-[node name="Option3" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1866058970]
+[node name="Option3" type="Button" parent="MarginContainer/Control/PanelContainer/MarginContainer/Options" unique_id=1866058970]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Option 3"
@@ -137,7 +91,7 @@ script = ExtResource("8_r5as3")
 id = 3
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
-[node name="Option4" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1342522610]
+[node name="Option4" type="Button" parent="MarginContainer/Control/PanelContainer/MarginContainer/Options" unique_id=1342522610]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Option 4"
@@ -145,7 +99,7 @@ script = ExtResource("8_r5as3")
 id = 4
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
-[node name="Option5" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/Options" unique_id=1689095254]
+[node name="Option5" type="Button" parent="MarginContainer/Control/PanelContainer/MarginContainer/Options" unique_id=1689095254]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Option 5"
@@ -153,7 +107,67 @@ script = ExtResource("8_r5as3")
 id = 5
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
-[node name="Dialogue" type="Node" parent="MarginContainer/PanelContainer" unique_id=1293488405 node_paths=PackedStringArray("label")]
+[node name="Dialogue" type="Node" parent="MarginContainer/Control/PanelContainer" unique_id=1293488405 node_paths=PackedStringArray("label")]
 unique_name_in_owner = true
 script = ExtResource("1_nyvx4")
 label = NodePath("../MarginContainer/Options/Label")
+
+[node name="Person1" type="Button" parent="MarginContainer/Control" unique_id=1066751512]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 193.0
+offset_top = 150.0
+offset_right = 269.0
+offset_bottom = 181.0
+text = "Person 1"
+script = ExtResource("2_ueusv")
+data = ExtResource("3_yvprt")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="Person2" type="Button" parent="MarginContainer/Control" unique_id=1039517394]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 383.0
+offset_top = 291.0
+offset_right = 459.0
+offset_bottom = 322.0
+text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("4_r5as3")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="Person3" type="Button" parent="MarginContainer/Control" unique_id=1168119716]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 481.0
+offset_top = 159.0
+offset_right = 557.0
+offset_bottom = 190.0
+text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("5_nimes")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="Person4" type="Button" parent="MarginContainer/Control" unique_id=1220695094]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 127.0
+offset_top = 359.0
+offset_right = 203.0
+offset_bottom = 390.0
+text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("6_2okcp")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="Person5" type="Button" parent="MarginContainer/Control" unique_id=897581691]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 454.0
+offset_top = 451.0
+offset_right = 530.0
+offset_bottom = 482.0
+text = "Person 2"
+script = ExtResource("2_ueusv")
+data = ExtResource("7_vyivm")
+metadata/_custom_type_script = "uid://b3nchrelsy3go"
