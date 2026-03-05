@@ -9,6 +9,7 @@
 [ext_resource type="Resource" uid="uid://cnvs5aydtk4g3" path="res://contents/Candidate4.tres" id="6_2okcp"]
 [ext_resource type="Resource" uid="uid://bx7e40hxn3630" path="res://contents/Candidate5.tres" id="7_vyivm"]
 [ext_resource type="Script" uid="uid://dge6jk2puryar" path="res://gameplay/components/option.gd" id="8_r5as3"]
+[ext_resource type="PackedScene" uid="uid://b0cree4edurk4" path="res://gameplay/end_game_menu.tscn" id="10_nimes"]
 
 [node name="Gameplay" type="Control" unique_id=1009020929]
 layout_mode = 3
@@ -34,11 +35,24 @@ theme_override_constants/margin_bottom = 12
 [node name="Control" type="Control" parent="MarginContainer" unique_id=944719437]
 layout_mode = 2
 
-[node name="NervousnessBar" type="ProgressBar" parent="MarginContainer/Control" unique_id=312187892]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Control" unique_id=1548569406]
+layout_mode = 0
+offset_right = 434.0
+offset_bottom = 74.0
+
+[node name="NervousnessBar" type="ProgressBar" parent="MarginContainer/Control/VBoxContainer" unique_id=312187892]
 unique_name_in_owner = true
-layout_mode = 1
-offset_right = 307.0
-offset_bottom = 27.0
+layout_mode = 2
+
+[node name="DealLabel" type="Label" parent="MarginContainer/Control/VBoxContainer" unique_id=1259261177]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Deal: 0"
+
+[node name="FastDialogueCheckBox" type="CheckBox" parent="MarginContainer/Control/VBoxContainer" unique_id=270116631]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Fast Dialogue"
 
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer/Control" unique_id=1510549329]
 layout_mode = 1
@@ -171,3 +185,10 @@ text = "Person 2"
 script = ExtResource("2_ueusv")
 data = ExtResource("7_vyivm")
 metadata/_custom_type_script = "uid://b3nchrelsy3go"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=657021893]
+
+[node name="EndGameMenu" parent="CanvasLayer" unique_id=1972742825 instance=ExtResource("10_nimes")]
+unique_name_in_owner = true
+
+[connection signal="toggled" from="MarginContainer/Control/VBoxContainer/FastDialogueCheckBox" to="." method="_on_fast_dialogue_check_box_toggled"]
