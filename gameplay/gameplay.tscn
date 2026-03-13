@@ -19,6 +19,12 @@
 [ext_resource type="Texture2D" uid="uid://ukk1ldk525jy" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_5.png" id="14_47db2"]
 [ext_resource type="Texture2D" uid="uid://dwuwbe5t3j55o" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_6.png" id="15_gh0v3"]
 [ext_resource type="Texture2D" uid="uid://ct4tw61q0bg38" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_7.png" id="16_s60jr"]
+[ext_resource type="Shader" uid="uid://c3q8hvittqeq2" path="res://gameplay/gameplay.gdshader" id="20_b2kny"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y3ygr"]
+shader = ExtResource("20_b2kny")
+shader_parameter/strength = 4.00000018674012
+shader_parameter/mix_percentage = 0.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n6aft"]
 animations = [{
@@ -60,6 +66,7 @@ script = ExtResource("1_41n4r")
 
 [node name="MainHall" type="Control" parent="." unique_id=1999987469]
 unique_name_in_owner = true
+material = SubResource("ShaderMaterial_y3ygr")
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -152,6 +159,7 @@ frame_progress = 0.17066906
 centered = false
 
 [node name="PanelContainer" type="PanelContainer" parent="Conversation" unique_id=1510549329]
+z_index = 1
 layout_mode = 1
 anchors_preset = 11
 anchor_left = 1.0
@@ -239,6 +247,7 @@ script = ExtResource("1_nyvx4")
 label = NodePath("../MarginContainer/Options/Label")
 
 [node name="Overlay" type="CanvasLayer" parent="." unique_id=657021893]
+layer = 2
 
 [node name="EndGameMenu" parent="Overlay" unique_id=1972742825 instance=ExtResource("10_nimes")]
 unique_name_in_owner = true
@@ -269,6 +278,16 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Fast Dialogue"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1532164028]
+material = SubResource("ShaderMaterial_y3ygr")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [connection signal="pressed" from="Conversation/PanelContainer/MarginContainer/Options/EndConversation" to="." method="_conversation_finished"]
 [connection signal="toggled" from="Overlay/VBoxContainer/FastDialogueCheckBox" to="." method="_on_fast_dialogue_check_box_toggled"]
