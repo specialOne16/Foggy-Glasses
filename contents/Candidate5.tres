@@ -1,8 +1,170 @@
 [gd_resource type="Resource" script_class="CandidateData" format=3 uid="uid://bx7e40hxn3630"]
 
+[ext_resource type="Texture2D" uid="uid://dc650qs1dp5hg" path="res://assets/Ayu Salman/Ayu_Bg.PNG" id="1_ardwn"]
 [ext_resource type="Script" uid="uid://dou1qeyoi3l0x" path="res://system/candidate.gd" id="1_wpkct"]
+[ext_resource type="Texture2D" uid="uid://csvjfo7n5pgqq" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_1.png" id="2_sgh70"]
+[ext_resource type="Texture2D" uid="uid://xl36v8xpgswp" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_2.png" id="3_hqrmx"]
+[ext_resource type="Texture2D" uid="uid://0wwwvkac8blq" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_3.png" id="4_gfde8"]
+[ext_resource type="Texture2D" uid="uid://bcfdogi1iq3oq" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_4.png" id="5_i13pa"]
+[ext_resource type="Texture2D" uid="uid://bataf0n0jpcp5" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_5.png" id="6_xtogp"]
+[ext_resource type="Texture2D" uid="uid://c3v8nyohtu62d" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_6.png" id="7_5pidl"]
+[ext_resource type="Texture2D" uid="uid://bgod22fkaciq" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_7.png" id="8_kfxd0"]
+[ext_resource type="Texture2D" uid="uid://d1en6h7nl0ugs" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_8.png" id="9_bi43i"]
+[ext_resource type="Texture2D" uid="uid://deycsg5vfhn7m" path="res://assets/Ayu Salman/Correct_Agree/Ayu_Agree_9.png" id="10_edq3j"]
+[ext_resource type="Texture2D" uid="uid://0a6jb5hlap10" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_1.png" id="11_c221k"]
+[ext_resource type="Texture2D" uid="uid://4ju4ibycatgs" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_2.png" id="12_jhrq4"]
+[ext_resource type="Texture2D" uid="uid://cno6gel2j8ee4" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_3.png" id="13_mglkc"]
+[ext_resource type="Texture2D" uid="uid://cwa4emmxjbil3" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_4.png" id="14_0p7pk"]
+[ext_resource type="Texture2D" uid="uid://c5v3olxugpae8" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_5.png" id="15_jyey0"]
+[ext_resource type="Texture2D" uid="uid://cyax855pw0n6d" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_6.png" id="16_yxjhc"]
+[ext_resource type="Texture2D" uid="uid://byhocen1ui3bh" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_7.png" id="17_ux5i6"]
+[ext_resource type="Texture2D" uid="uid://cm2jklvcl7mei" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_8.png" id="18_s7yjw"]
+[ext_resource type="Texture2D" uid="uid://d3ky48bmvpbap" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_9.png" id="19_cpbqe"]
+[ext_resource type="Texture2D" uid="uid://d0mm24o1dopoe" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_10.png" id="20_uttlv"]
+[ext_resource type="Texture2D" uid="uid://bpv1py6kxcf04" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_11.png" id="21_frv1j"]
+[ext_resource type="Texture2D" uid="uid://bjsi2otd427g2" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_12.png" id="22_ojdtw"]
+[ext_resource type="Texture2D" uid="uid://cylm8r3td8fk6" path="res://assets/Ayu Salman/Incorrect_Disagree/Ayu_Disagree_13.png" id="23_jmhlc"]
+[ext_resource type="Texture2D" uid="uid://ccc1wptjgvhxl" path="res://assets/Ayu Salman/Idle/Ayu_Idle_1.png" id="24_1f3a5"]
+[ext_resource type="Texture2D" uid="uid://botk5y0wpfawy" path="res://assets/Ayu Salman/Idle/Ayu_Idle_2.png" id="25_dnyyc"]
+[ext_resource type="Texture2D" uid="uid://dv8lucdfq633j" path="res://assets/Ayu Salman/Idle/Ayu_Idle_3.png" id="26_sqa6j"]
+[ext_resource type="Texture2D" uid="uid://31ou203div64" path="res://assets/Ayu Salman/Idle/Ayu_Idle_4.png" id="27_q6occ"]
+[ext_resource type="Texture2D" uid="uid://oq6mkpjbg12j" path="res://assets/Ayu Salman/Idle/Ayu_Idle_5.png" id="28_rlqmp"]
+[ext_resource type="Texture2D" uid="uid://d2bnf0xlvh6ox" path="res://assets/Ayu Salman/Idle/Ayu_Idle_6.png" id="29_r7h3s"]
+[ext_resource type="Texture2D" uid="uid://crdc34ww6jfcd" path="res://assets/Ayu Salman/Neutral/Ayu_Neutral_1.png" id="30_q1wv0"]
+[ext_resource type="Texture2D" uid="uid://dchxygktcpet8" path="res://assets/Ayu Salman/Neutral/Ayu_Neutral_2.png" id="31_f6j0f"]
+[ext_resource type="Texture2D" uid="uid://brp7hu6mtcfj7" path="res://assets/Ayu Salman/Neutral/Ayu_Neutral_3.png" id="32_y8ix5"]
+[ext_resource type="Texture2D" uid="uid://cjgbrc3hr6k4d" path="res://assets/Ayu Salman/Neutral/Ayu_Neutral_4.png" id="33_pg7qo"]
+[ext_resource type="Texture2D" uid="uid://bit8tfrgqjchb" path="res://assets/Ayu Salman/Neutral/Ayu_Neutral_5.png" id="34_24u7b"]
+[ext_resource type="Texture2D" uid="uid://b354av7hs6act" path="res://assets/Ayu Salman/Neutral/Ayu_Neutral_6.png" id="35_k2dn3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_44wug"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_sgh70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hqrmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gfde8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i13pa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xtogp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5pidl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kfxd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bi43i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_edq3j")
+}],
+"loop": false,
+"name": &"agree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_c221k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jhrq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mglkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0p7pk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jyey0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yxjhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ux5i6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_s7yjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_cpbqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_uttlv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_frv1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ojdtw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_jmhlc")
+}],
+"loop": false,
+"name": &"disagree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_1f3a5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_dnyyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_sqa6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_q6occ")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_rlqmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_r7h3s")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_q1wv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_f6j0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_y8ix5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_pg7qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_24u7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_k2dn3")
+}],
+"loop": false,
+"name": &"neutral",
+"speed": 6.0
+}]
 
 [resource]
 script = ExtResource("1_wpkct")
 candidate_name = "Ayu Salman"
+frames = SubResource("SpriteFrames_44wug")
+background = ExtResource("1_ardwn")
 metadata/_custom_type_script = "uid://dou1qeyoi3l0x"

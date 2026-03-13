@@ -2,6 +2,7 @@ extends Control
 
 @onready var persons = [%Person1, %Person2, %Person3, %Person4, %Person5]
 @onready var options = [%Option1, %Option2, %Option3, %Option4, %Option5]
+@onready var end_conversation: Button = $Conversation/PanelContainer/MarginContainer/Options/EndConversation
 @onready var nervousness_bar: ProgressBar = %NervousnessBar
 @onready var deal_label: Label = %DealLabel
 
@@ -26,6 +27,7 @@ func _ready() -> void:
 		person.candidate_selected.connect(_candidate_selected)
 	
 	dialogue.sequence_finished.connect(_dialogue_finished)
+	conversation_person.animation_finished.connect(conversation_person.play.bind("idle"))
 	
 	for option in options:
 		option.pressed.connect(_option_selected.bind(option))
@@ -33,8 +35,12 @@ func _ready() -> void:
 	
 	main_hall.visible = true
 	conversation.visible = false
+	
+	AudioPlayer.in_a_blur_1_.play()
 
 func _candidate_selected(candidate: Candidate):
+	AudioPlayer.pop.play()
+	
 	active_person = candidate.data
 	sequence_number = 1
 	member_contacted += 1
@@ -50,31 +56,41 @@ func _candidate_selected(candidate: Candidate):
 	dialogue.start_dialogue_sequence(active_person.get_dialogue(sequence_number))
 
 func _option_selected(option: Option):
+	AudioPlayer.pop.play()
+	
 	_toggle_options(false)
 	if active_person.is_exchange_success(sequence_number, option.id):
 		success_exchange += 1
+		AudioPlayer.success.play()
+		conversation_person.play("agree")
+	else:
+		AudioPlayer.failure.play()
+		conversation_person.play("disagree")
 	
 	if sequence_number < 5:
 		sequence_number += 1
 		dialogue.start_dialogue_sequence(active_person.get_dialogue(sequence_number))
-	else:
-		active_person = null
-		match 5 - success_exchange:
-			0, 1: 
-				nervousness_bar.value -= 10
-				member_deal += 1
-				deal_label.text = "Deal: %d" % member_deal
-			2: nervousness_bar.value += 5
-			3, 4, 5: nervousness_bar.value += 20
-		
-		success_exchange = 0
-		_conversation_finished()
 
 func _dialogue_finished():
-	if active_person != null:
+	if sequence_number < 5:
 		_toggle_options(true)
+	else:
+		_toggle_options(false, true)
 
 func _conversation_finished():
+	AudioPlayer.pop.play()
+	
+	active_person = null
+	match 5 - success_exchange:
+		0, 1: 
+			nervousness_bar.value -= 10
+			member_deal += 1
+			deal_label.text = "Deal: %d" % member_deal
+		2: nervousness_bar.value += 5
+		3, 4, 5: nervousness_bar.value += 20
+	
+	success_exchange = 0
+	
 	main_hall.visible = true
 	conversation.visible = false
 	
@@ -91,8 +107,10 @@ func _conversation_finished():
 		"I’m so proud of you honey! Next time we’ll both bring our glasses and get even more partners!"
 	)
 
-func _toggle_options(option_visible: bool):
+func _toggle_options(option_visible: bool, final: bool = false):
 	if active_person == null: return
+	
+	end_conversation.visible = final
 	
 	for option in options:
 		option.visible = option_visible

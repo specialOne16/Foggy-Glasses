@@ -68,7 +68,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_vj0hx")
 }],
-"loop": true,
+"loop": false,
 "name": &"agree",
 "speed": 6.0
 }, {
@@ -106,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("19_qax5p")
 }],
-"loop": true,
+"loop": false,
 "name": &"disagree",
 "speed": 6.0
 }, {
@@ -173,7 +173,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("38_maxra")
 }],
-"loop": true,
+"loop": false,
 "name": &"neutral",
 "speed": 6.0
 }]

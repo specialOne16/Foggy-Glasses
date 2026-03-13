@@ -11,42 +11,38 @@
 [ext_resource type="Resource" uid="uid://bx7e40hxn3630" path="res://contents/Candidate5.tres" id="7_vyivm"]
 [ext_resource type="Script" uid="uid://dge6jk2puryar" path="res://gameplay/components/option.gd" id="8_r5as3"]
 [ext_resource type="Texture2D" uid="uid://i65sitvuql33" path="res://assets/Asahi Inoue/Asahi_Bg.PNG" id="10_2okcp"]
+[ext_resource type="Texture2D" uid="uid://c4f88okkhk4m1" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_1.png" id="10_53nod"]
 [ext_resource type="PackedScene" uid="uid://b0cree4edurk4" path="res://gameplay/end_game_menu.tscn" id="10_nimes"]
-[ext_resource type="Texture2D" uid="uid://04d36qymibt" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_1.png" id="11_53nod"]
-[ext_resource type="Texture2D" uid="uid://dygnd6py3reoo" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_2.png" id="12_b2kny"]
-[ext_resource type="Texture2D" uid="uid://dyo7pf8rcolmm" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_3.png" id="13_y3ygr"]
-[ext_resource type="Texture2D" uid="uid://bygrtnjumc5wu" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_4.png" id="14_xmdrq"]
-[ext_resource type="Texture2D" uid="uid://cb7pf3cy1vpaq" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_5.png" id="15_47db2"]
-[ext_resource type="Texture2D" uid="uid://c0fmnn21sfmn5" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_6.png" id="16_gh0v3"]
-[ext_resource type="Texture2D" uid="uid://ct8g7glgjlgmk" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_7.png" id="17_s60jr"]
-[ext_resource type="Texture2D" uid="uid://dtef7wlwd8e30" path="res://assets/Asahi Inoue/Agree_Correct/Asahi_Agree_8.png" id="18_q2ml8"]
+[ext_resource type="Texture2D" uid="uid://sl4rq5ix4ttp" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_2.png" id="11_b2kny"]
+[ext_resource type="Texture2D" uid="uid://cmoadbdgb7yvv" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_3.png" id="12_y3ygr"]
+[ext_resource type="Texture2D" uid="uid://csor83xorgbfb" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_4.png" id="13_xmdrq"]
+[ext_resource type="Texture2D" uid="uid://ukk1ldk525jy" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_5.png" id="14_47db2"]
+[ext_resource type="Texture2D" uid="uid://dwuwbe5t3j55o" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_6.png" id="15_gh0v3"]
+[ext_resource type="Texture2D" uid="uid://ct4tw61q0bg38" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_7.png" id="16_s60jr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n6aft"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_53nod")
+"texture": ExtResource("10_53nod")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_b2kny")
+"texture": ExtResource("11_b2kny")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_y3ygr")
+"texture": ExtResource("12_y3ygr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_xmdrq")
+"texture": ExtResource("13_xmdrq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_47db2")
+"texture": ExtResource("14_47db2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_gh0v3")
+"texture": ExtResource("15_gh0v3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_s60jr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_q2ml8")
+"texture": ExtResource("16_s60jr")
 }],
 "loop": true,
 "name": &"default",
@@ -151,7 +147,8 @@ texture = ExtResource("10_2okcp")
 
 [node name="ConversationPerson" type="AnimatedSprite2D" parent="Conversation" unique_id=1997525645]
 sprite_frames = SubResource("SpriteFrames_n6aft")
-frame_progress = 0.24869843
+frame = 5
+frame_progress = 0.17066906
 centered = false
 
 [node name="PanelContainer" type="PanelContainer" parent="Conversation" unique_id=1510549329]
@@ -160,7 +157,7 @@ anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -396.0
+offset_left = -658.0
 offset_top = 27.0
 offset_right = -32.0
 offset_bottom = -27.0
@@ -182,11 +179,14 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+text = "Test"
 autowrap_mode = 3
 
 [node name="Option1" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=431362580]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Option 1"
 script = ExtResource("8_r5as3")
 id = 1
@@ -195,6 +195,7 @@ metadata/_custom_type_script = "uid://dge6jk2puryar"
 [node name="Option2" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1984692847]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Option 2"
 script = ExtResource("8_r5as3")
 id = 2
@@ -203,6 +204,7 @@ metadata/_custom_type_script = "uid://dge6jk2puryar"
 [node name="Option3" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1866058970]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Option 3"
 script = ExtResource("8_r5as3")
 id = 3
@@ -211,6 +213,7 @@ metadata/_custom_type_script = "uid://dge6jk2puryar"
 [node name="Option4" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1342522610]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Option 4"
 script = ExtResource("8_r5as3")
 id = 4
@@ -219,10 +222,16 @@ metadata/_custom_type_script = "uid://dge6jk2puryar"
 [node name="Option5" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1689095254]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Option 5"
 script = ExtResource("8_r5as3")
 id = 5
 metadata/_custom_type_script = "uid://dge6jk2puryar"
+
+[node name="EndConversation" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=349288329]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "End Conversation"
 
 [node name="Dialogue" type="Node" parent="Conversation/PanelContainer" unique_id=1293488405 node_paths=PackedStringArray("label")]
 unique_name_in_owner = true
@@ -233,25 +242,33 @@ label = NodePath("../MarginContainer/Options/Label")
 
 [node name="EndGameMenu" parent="Overlay" unique_id=1972742825 instance=ExtResource("10_nimes")]
 unique_name_in_owner = true
+offset_left = -603.0
+offset_top = -331.0
+offset_right = 603.0
+offset_bottom = 235.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Overlay" unique_id=1548569406]
 offset_left = 12.0
 offset_top = 12.0
-offset_right = 446.0
-offset_bottom = 101.0
+offset_right = 819.0
+offset_bottom = 184.0
 
 [node name="NervousnessBar" type="ProgressBar" parent="Overlay/VBoxContainer" unique_id=312187892]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 
 [node name="DealLabel" type="Label" parent="Overlay/VBoxContainer" unique_id=1259261177]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Deal: 0"
 
 [node name="FastDialogueCheckBox" type="CheckBox" parent="Overlay/VBoxContainer" unique_id=270116631]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Fast Dialogue"
 
+[connection signal="pressed" from="Conversation/PanelContainer/MarginContainer/Options/EndConversation" to="." method="_conversation_finished"]
 [connection signal="toggled" from="Overlay/VBoxContainer/FastDialogueCheckBox" to="." method="_on_fast_dialogue_check_box_toggled"]

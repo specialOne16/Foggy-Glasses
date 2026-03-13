@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://k7jpxfkife7w"]
+
+[ext_resource type="Script" uid="uid://c5kov5akk6o5g" path="res://audios/audio_player.gd" id="1_hkbiq"]
+[ext_resource type="AudioStream" uid="uid://dgbpq46b0ykhv" path="res://audios/Failure.wav" id="2_jik1c"]
+[ext_resource type="AudioStream" uid="uid://cqmiquulm5m48" path="res://audios/In_a_Blur (1).mp3" id="3_a3shk"]
+[ext_resource type="AudioStream" uid="uid://cetuer76csp7b" path="res://audios/Main_MenuCredits_theme.mp3" id="4_nrfsp"]
+[ext_resource type="AudioStream" uid="uid://dqhi15qyi05ln" path="res://audios/pop.wav" id="5_frmbq"]
+[ext_resource type="AudioStream" uid="uid://dr7apeqebgucj" path="res://audios/Success.wav" id="6_bt7n3"]
+
+[node name="AudioPlayer" type="Node" unique_id=2114970179]
+script = ExtResource("1_hkbiq")
+
+[node name="Failure" type="AudioStreamPlayer" parent="." unique_id=117045034]
+stream = ExtResource("2_jik1c")
+
+[node name="InABlur(1)" type="AudioStreamPlayer" parent="." unique_id=2078461312]
+stream = ExtResource("3_a3shk")
+
+[node name="MainMenuCreditsTheme" type="AudioStreamPlayer" parent="." unique_id=631305041]
+stream = ExtResource("4_nrfsp")
+
+[node name="Pop" type="AudioStreamPlayer" parent="." unique_id=1527252428]
+stream = ExtResource("5_frmbq")
+
+[node name="Success" type="AudioStreamPlayer" parent="." unique_id=1750972708]
+stream = ExtResource("6_bt7n3")
+
+[connection signal="finished" from="InABlur(1)" to="." method="_on_in_a_blur_1_finished"]
+[connection signal="finished" from="MainMenuCreditsTheme" to="." method="_on_main_menu_credits_theme_finished"]
