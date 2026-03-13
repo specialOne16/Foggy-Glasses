@@ -2,6 +2,8 @@ extends Resource
 class_name CandidateData
 
 @export var candidate_name: String
+@export var frames: SpriteFrames
+@export var background: Texture2D
 
 func get_dialogue(sequence_number: int) -> Array[String]:
 	if sequence_number == 0:
