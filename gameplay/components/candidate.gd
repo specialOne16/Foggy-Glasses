@@ -8,4 +8,4 @@ signal candidate_selected(data: Candidate)
 func _ready() -> void:
 	pressed.connect(func(): candidate_selected.emit(self))
 	
-	text = data.candidate_name
+	text = "Approach"

@@ -72,8 +72,8 @@ func _option_selected(option: Option):
 			conversation_person.play("disagree")
 	
 	if sequence_number < 5:
+		dialogue.start_dialogue_sequence(active_person.get_dialogue(sequence_number, option.type))
 		sequence_number += 1
-		dialogue.start_dialogue_sequence(active_person.get_dialogue(sequence_number))
 
 func _dialogue_finished():
 	if sequence_number < 5:
@@ -114,7 +114,11 @@ func _conversation_finished():
 func _toggle_options(option_visible: bool, final: bool = false):
 	if active_person == null: return
 	
+	
 	end_conversation.visible = final
+	match 5 - success_exchange:
+		0, 1: end_conversation.text = "Confirm Partnership"
+		2, 3, 4, 5: end_conversation.text = "See other stalls"
 	
 	if option_visible:
 		var current_options = active_person.get_options(sequence_number)
