@@ -204,7 +204,6 @@ custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 32
-text = "Test"
 autowrap_mode = 3
 
 [node name="Option1" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=431362580]
@@ -212,8 +211,8 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Option 1"
+autowrap_mode = 3
 script = ExtResource("8_r5as3")
-id = 1
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
 [node name="Option2" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1984692847]
@@ -221,8 +220,8 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Option 2"
+autowrap_mode = 3
 script = ExtResource("8_r5as3")
-id = 2
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
 [node name="Option3" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1866058970]
@@ -230,8 +229,8 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Option 3"
+autowrap_mode = 3
 script = ExtResource("8_r5as3")
-id = 3
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
 [node name="Option4" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1342522610]
@@ -239,8 +238,8 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Option 4"
+autowrap_mode = 3
 script = ExtResource("8_r5as3")
-id = 4
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
 [node name="Option5" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=1689095254]
@@ -248,8 +247,8 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Option 5"
+autowrap_mode = 3
 script = ExtResource("8_r5as3")
-id = 5
 metadata/_custom_type_script = "uid://dge6jk2puryar"
 
 [node name="EndConversation" type="Button" parent="Conversation/PanelContainer/MarginContainer/Options" unique_id=349288329]

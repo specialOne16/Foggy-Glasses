@@ -181,6 +181,7 @@ animations = [{
 [resource]
 script = ExtResource("1_3aphx")
 candidate_name = "Lien Soo"
+candidate_id = 2
 frames = SubResource("SpriteFrames_neav7")
 background = ExtResource("1_hy50q")
 metadata/_custom_type_script = "uid://dou1qeyoi3l0x"

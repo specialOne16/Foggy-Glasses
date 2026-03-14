@@ -181,6 +181,7 @@ animations = [{
 [resource]
 script = ExtResource("1_dxhdo")
 candidate_name = "Asahi Inoue"
+candidate_id = 1
 frames = SubResource("SpriteFrames_a85ot")
 background = ExtResource("1_g8at1")
 metadata/_custom_type_script = "uid://dou1qeyoi3l0x"

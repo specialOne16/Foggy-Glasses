@@ -42,7 +42,7 @@ func _candidate_selected(candidate: Candidate):
 	AudioPlayer.pop.play()
 	
 	active_person = candidate.data
-	sequence_number = 1
+	sequence_number = 0
 	member_contacted += 1
 	candidate.disabled = true
 	
@@ -52,20 +52,24 @@ func _candidate_selected(candidate: Candidate):
 	main_hall.visible = false
 	conversation.visible = true
 	
-	_toggle_options(false)
-	dialogue.start_dialogue_sequence(active_person.get_dialogue(sequence_number))
+	_toggle_options(true)
 
 func _option_selected(option: Option):
 	AudioPlayer.pop.play()
 	
 	_toggle_options(false)
-	if active_person.is_exchange_success(sequence_number, option.id):
-		success_exchange += 1
-		AudioPlayer.success.play()
-		conversation_person.play("agree")
-	else:
-		AudioPlayer.failure.play()
-		conversation_person.play("disagree")
+	match option.type:
+		"correct": 
+			success_exchange += 1
+			AudioPlayer.success.play()
+			conversation_person.play("agree")
+		"generic": 
+			success_exchange += 1
+			AudioPlayer.success.play()
+			conversation_person.play("neutral")
+		"incorrect": 
+			AudioPlayer.failure.play()
+			conversation_person.play("disagree")
 	
 	if sequence_number < 5:
 		sequence_number += 1
@@ -111,6 +115,12 @@ func _toggle_options(option_visible: bool, final: bool = false):
 	if active_person == null: return
 	
 	end_conversation.visible = final
+	
+	if option_visible:
+		var current_options = active_person.get_options(sequence_number)
+		for i in current_options.size():
+			options[i].type = current_options[i].type
+			options[i].text = current_options[i].text
 	
 	for option in options:
 		option.visible = option_visible

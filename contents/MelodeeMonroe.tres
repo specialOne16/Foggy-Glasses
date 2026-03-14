@@ -179,4 +179,5 @@ script = ExtResource("39_jfsrt")
 candidate_name = "Mellodee Monroe"
 frames = SubResource("SpriteFrames_bgf08")
 background = ExtResource("1_vokaf")
+response = null
 metadata/_custom_type_script = "uid://dou1qeyoi3l0x"
