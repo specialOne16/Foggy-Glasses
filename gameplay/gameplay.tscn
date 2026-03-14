@@ -3,22 +3,14 @@
 [ext_resource type="Script" uid="uid://baxcjapxtdt5c" path="res://gameplay/gameplay.gd" id="1_41n4r"]
 [ext_resource type="Script" uid="uid://db5km568fds6m" path="res://system/dialogue.gd" id="1_nyvx4"]
 [ext_resource type="Script" uid="uid://b3nchrelsy3go" path="res://gameplay/components/candidate.gd" id="2_ueusv"]
-[ext_resource type="Resource" uid="uid://ry47ld8jm0gx" path="res://contents/Candidate1.tres" id="3_yvprt"]
-[ext_resource type="Texture2D" uid="uid://dttkyl4hxiuaf" path="res://assets/Game_MainHall_Bg.PNG" id="4_b2kny"]
-[ext_resource type="Resource" uid="uid://c2dlk73xvuu36" path="res://contents/Candidate2.tres" id="4_r5as3"]
-[ext_resource type="Resource" uid="uid://bo8dchgmady41" path="res://contents/Candidate3.tres" id="5_nimes"]
-[ext_resource type="Resource" uid="uid://cnvs5aydtk4g3" path="res://contents/Candidate4.tres" id="6_2okcp"]
-[ext_resource type="Resource" uid="uid://bx7e40hxn3630" path="res://contents/Candidate5.tres" id="7_vyivm"]
+[ext_resource type="Texture2D" uid="uid://dkjg1o6y6abd6" path="res://assets/MainHall_Blurred.png" id="3_vyivm"]
+[ext_resource type="Resource" uid="uid://ry47ld8jm0gx" path="res://contents/MelodeeMonroe.tres" id="3_yvprt"]
+[ext_resource type="Resource" uid="uid://c2dlk73xvuu36" path="res://contents/Asahi Inoue.tres" id="4_r5as3"]
+[ext_resource type="Resource" uid="uid://bo8dchgmady41" path="res://contents/Lien Soo.tres" id="5_nimes"]
+[ext_resource type="Resource" uid="uid://cnvs5aydtk4g3" path="res://contents/Sami Mansur.tres" id="6_2okcp"]
+[ext_resource type="Resource" uid="uid://bx7e40hxn3630" path="res://contents/Ayu Salman.tres" id="7_vyivm"]
 [ext_resource type="Script" uid="uid://dge6jk2puryar" path="res://gameplay/components/option.gd" id="8_r5as3"]
-[ext_resource type="Texture2D" uid="uid://i65sitvuql33" path="res://assets/Asahi Inoue/Asahi_Bg.PNG" id="10_2okcp"]
-[ext_resource type="Texture2D" uid="uid://c4f88okkhk4m1" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_1.png" id="10_53nod"]
 [ext_resource type="PackedScene" uid="uid://b0cree4edurk4" path="res://gameplay/end_game_menu.tscn" id="10_nimes"]
-[ext_resource type="Texture2D" uid="uid://sl4rq5ix4ttp" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_2.png" id="11_b2kny"]
-[ext_resource type="Texture2D" uid="uid://cmoadbdgb7yvv" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_3.png" id="12_y3ygr"]
-[ext_resource type="Texture2D" uid="uid://csor83xorgbfb" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_4.png" id="13_xmdrq"]
-[ext_resource type="Texture2D" uid="uid://ukk1ldk525jy" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_5.png" id="14_47db2"]
-[ext_resource type="Texture2D" uid="uid://dwuwbe5t3j55o" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_6.png" id="15_gh0v3"]
-[ext_resource type="Texture2D" uid="uid://ct4tw61q0bg38" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_7.png" id="16_s60jr"]
 [ext_resource type="Shader" uid="uid://c3q8hvittqeq2" path="res://gameplay/gameplay.gdshader" id="20_b2kny"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_y3ygr"]
@@ -26,29 +18,53 @@ shader = ExtResource("20_b2kny")
 shader_parameter/strength = 4.00000018674012
 shader_parameter/mix_percentage = 0.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vyivm"]
+load_path = "res://.godot/imported/Asahi_Bg.PNG-89370b41b8f0e9f5bec31461a7088721.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uqgqx"]
+load_path = "res://.godot/imported/Mellodee_Idle_1.png-c625de2d8a8a66bd867bc226a01fa210.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4rcc0"]
+load_path = "res://.godot/imported/Mellodee_Idle_2.png-ae8628999ea6c08d312c6f1b6846b044.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a363o"]
+load_path = "res://.godot/imported/Mellodee_Idle_3.png-992287c40fcf951e7d64e6c647403f59.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bx64p"]
+load_path = "res://.godot/imported/Mellodee_Idle_4.png-a9fc4b93d170b6c506c753e160cfcd97.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4vl10"]
+load_path = "res://.godot/imported/Mellodee_Idle_5.png-18883ea4d62558c288d755adc7cb9252.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_63nix"]
+load_path = "res://.godot/imported/Mellodee_Idle_6.png-9f1ef247d81c8107e85b8727a73df86f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_53nod"]
+load_path = "res://.godot/imported/Mellodee_Idle_7.png-b77a0cef034857b7451c55be37b1e4d1.ctex"
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_n6aft"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_53nod")
+"texture": SubResource("CompressedTexture2D_uqgqx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_b2kny")
+"texture": SubResource("CompressedTexture2D_4rcc0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_y3ygr")
+"texture": SubResource("CompressedTexture2D_a363o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_xmdrq")
+"texture": SubResource("CompressedTexture2D_bx64p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_47db2")
+"texture": SubResource("CompressedTexture2D_4vl10")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_gh0v3")
+"texture": SubResource("CompressedTexture2D_63nix")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_s60jr")
+"texture": SubResource("CompressedTexture2D_53nod")
 }],
 "loop": true,
 "name": &"default",
@@ -75,7 +91,7 @@ offset_bottom = 40.0
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("4_b2kny")
+texture = ExtResource("3_vyivm")
 
 [node name="Person1" type="Button" parent="MainHall" unique_id=1066751512]
 unique_name_in_owner = true
@@ -150,7 +166,7 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("10_2okcp")
+texture = SubResource("CompressedTexture2D_vyivm")
 
 [node name="ConversationPerson" type="AnimatedSprite2D" parent="Conversation" unique_id=1997525645]
 sprite_frames = SubResource("SpriteFrames_n6aft")

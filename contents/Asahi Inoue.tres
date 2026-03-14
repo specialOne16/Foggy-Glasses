@@ -1,0 +1,186 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3 uid="uid://c2dlk73xvuu36"]
+
+[ext_resource type="Script" uid="uid://dou1qeyoi3l0x" path="res://system/candidate.gd" id="1_dxhdo"]
+[ext_resource type="Texture2D" uid="uid://bkbhyvmsdm1xy" path="res://assets/Asahi Inoue/Asahi_BlurredBg.png" id="1_g8at1"]
+[ext_resource type="Texture2D" uid="uid://bwvl4piph53nb" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-1.png" id="2_kl77n"]
+[ext_resource type="Texture2D" uid="uid://bt8ren0qskxuy" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-2.png" id="3_osjda"]
+[ext_resource type="Texture2D" uid="uid://1ccl6882sfbd" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-3.png" id="4_2fprs"]
+[ext_resource type="Texture2D" uid="uid://byhdeiq3lo74c" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-4.png" id="5_365e7"]
+[ext_resource type="Texture2D" uid="uid://crnb737jklpud" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-5.png" id="6_qr686"]
+[ext_resource type="Texture2D" uid="uid://dy61s4dl5hgei" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-6.png" id="7_dtyhl"]
+[ext_resource type="Texture2D" uid="uid://0r7qcv6fgrh0" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-7.png" id="8_ert8r"]
+[ext_resource type="Texture2D" uid="uid://ekbc1au2makc" path="res://assets/Asahi Inoue/Correct_Agree/Asahi_Agree-8.png" id="9_o3byw"]
+[ext_resource type="Texture2D" uid="uid://nllydfu6krny" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-1.png" id="10_741ma"]
+[ext_resource type="Texture2D" uid="uid://mlb8emrjk8bu" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-2.png" id="11_nkr66"]
+[ext_resource type="Texture2D" uid="uid://dnuhurncqnyp6" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-3.png" id="12_sgjlq"]
+[ext_resource type="Texture2D" uid="uid://cva2pflqwl5tw" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-4.png" id="13_mygi7"]
+[ext_resource type="Texture2D" uid="uid://dl1o7p3rohirj" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-5.png" id="14_wjj3y"]
+[ext_resource type="Texture2D" uid="uid://cyvwaym7b1ta0" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-6.png" id="15_opm7w"]
+[ext_resource type="Texture2D" uid="uid://byebiwy0ojw3s" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-7.png" id="16_j0x4c"]
+[ext_resource type="Texture2D" uid="uid://cq8btlnyskpeg" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-8.png" id="17_cj740"]
+[ext_resource type="Texture2D" uid="uid://i5gsn8umbf07" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-9.png" id="18_lwthn"]
+[ext_resource type="Texture2D" uid="uid://bsjo7gxsh6470" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-10.png" id="19_a0tqq"]
+[ext_resource type="Texture2D" uid="uid://b1l84hurx33nw" path="res://assets/Asahi Inoue/Incorrect_Disagree/Asahi_Disagree-11.png" id="20_pbwbr"]
+[ext_resource type="Texture2D" uid="uid://c3axir8ycx8td" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-1.png" id="21_hx0mx"]
+[ext_resource type="Texture2D" uid="uid://cu3h3clgsehkb" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-2.png" id="22_0u80j"]
+[ext_resource type="Texture2D" uid="uid://bp6k0qgwjt6rh" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-3.png" id="23_pl77t"]
+[ext_resource type="Texture2D" uid="uid://e4nlxhu4ikmv" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-4.png" id="24_oqfrm"]
+[ext_resource type="Texture2D" uid="uid://dkhmy3euhr4ya" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-5.png" id="25_rfyo2"]
+[ext_resource type="Texture2D" uid="uid://dcglpy2ib1df8" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-6.png" id="26_qkqk2"]
+[ext_resource type="Texture2D" uid="uid://g4ngr3hqqh62" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-7.png" id="27_m1xx4"]
+[ext_resource type="Texture2D" uid="uid://7reb8l2exfkh" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-8.png" id="28_y7d0e"]
+[ext_resource type="Texture2D" uid="uid://uvulq362pkns" path="res://assets/Asahi Inoue/Idle/Asahi_Idle-9.png" id="29_vhvf0"]
+[ext_resource type="Texture2D" uid="uid://c721afkhs3qsb" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-1.png" id="30_bmw0i"]
+[ext_resource type="Texture2D" uid="uid://pryem4s1km88" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-2.png" id="31_qw3gi"]
+[ext_resource type="Texture2D" uid="uid://cpre6hkm206dd" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-3.png" id="32_lrkr7"]
+[ext_resource type="Texture2D" uid="uid://ngbnkrap6356" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-4.png" id="33_vq33w"]
+[ext_resource type="Texture2D" uid="uid://ho80hhcrrqyh" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-5.png" id="34_2gd35"]
+[ext_resource type="Texture2D" uid="uid://ckv40b7t1ogvy" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-6.png" id="35_e8xw5"]
+[ext_resource type="Texture2D" uid="uid://b3y2mw101647k" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-7.png" id="36_bsgtm"]
+[ext_resource type="Texture2D" uid="uid://dx5jbsuvd3uxc" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-8.png" id="37_dq5bq"]
+[ext_resource type="Texture2D" uid="uid://7gq6lh7cxowf" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-9.png" id="38_aq68a"]
+[ext_resource type="Texture2D" uid="uid://c6d3f4tmsuj0w" path="res://assets/Asahi Inoue/Neutral/Asahi_Neutral-10.png" id="39_sis8u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a85ot"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kl77n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_osjda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2fprs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_365e7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qr686")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dtyhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ert8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_o3byw")
+}],
+"loop": false,
+"name": &"agree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_741ma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nkr66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_sgjlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mygi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_wjj3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_opm7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j0x4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_cj740")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lwthn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_a0tqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_pbwbr")
+}],
+"loop": false,
+"name": &"disagree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_hx0mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0u80j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_pl77t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_oqfrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_rfyo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_qkqk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_m1xx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_y7d0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_vhvf0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_bmw0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_qw3gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_lrkr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vq33w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2gd35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_e8xw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_bsgtm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_dq5bq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_aq68a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_sis8u")
+}],
+"loop": false,
+"name": &"neutral",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_dxhdo")
+candidate_name = "Asahi Inoue"
+frames = SubResource("SpriteFrames_a85ot")
+background = ExtResource("1_g8at1")
+metadata/_custom_type_script = "uid://dou1qeyoi3l0x"

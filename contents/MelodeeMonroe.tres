@@ -1,0 +1,182 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3 uid="uid://ry47ld8jm0gx"]
+
+[ext_resource type="Texture2D" uid="uid://tmrf5bb8kdkl" path="res://assets/Mellodee Monroe/Mellodee_BlurredBg.png" id="1_vokaf"]
+[ext_resource type="Texture2D" uid="uid://m60f731k0k20" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_1.png" id="2_i6780"]
+[ext_resource type="Texture2D" uid="uid://dfhtwhtgb6ktn" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_2.png" id="3_qq3nx"]
+[ext_resource type="Texture2D" uid="uid://cbdw6nshjpj6" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_3.png" id="4_3aawc"]
+[ext_resource type="Texture2D" uid="uid://bdbp62txu2wbb" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_4.png" id="5_icqdy"]
+[ext_resource type="Texture2D" uid="uid://b1ww2g76o681e" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_5.png" id="6_cot2u"]
+[ext_resource type="Texture2D" uid="uid://dge1l3spvlgok" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_6.png" id="7_dlx0q"]
+[ext_resource type="Texture2D" uid="uid://dbieary3tcr3x" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_7.png" id="8_1mqjp"]
+[ext_resource type="Texture2D" uid="uid://dn7t7k1jdxs4q" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_8.png" id="9_j4g47"]
+[ext_resource type="Texture2D" uid="uid://bk2wgd22ey4mx" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_9.png" id="10_fjnu1"]
+[ext_resource type="Texture2D" uid="uid://cjxbfacrcxs0j" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_10.png" id="11_6i77c"]
+[ext_resource type="Texture2D" uid="uid://cyskwupyxv07r" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_11.png" id="12_nuxpq"]
+[ext_resource type="Texture2D" uid="uid://bm2c0ye0yty48" path="res://assets/Mellodee Monroe/Correct_Agree/Mellodee_Agree_12.png" id="13_15dsw"]
+[ext_resource type="Texture2D" uid="uid://br5bgd1w8e4u6" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_1.png" id="14_2q44q"]
+[ext_resource type="Texture2D" uid="uid://bltdq4o2tk7sr" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_2.png" id="15_2slmw"]
+[ext_resource type="Texture2D" uid="uid://bit8i3yil6dhb" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_3.png" id="16_yfjfs"]
+[ext_resource type="Texture2D" uid="uid://dd00hedi02wxs" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_4.png" id="17_6sq3s"]
+[ext_resource type="Texture2D" uid="uid://d0kq0l6lgcnub" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_5.png" id="18_ac8qm"]
+[ext_resource type="Texture2D" uid="uid://baxe23qihj5aj" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_6.png" id="19_6ro5o"]
+[ext_resource type="Texture2D" uid="uid://cfl31gw1yxndv" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_7.png" id="20_ijqhw"]
+[ext_resource type="Texture2D" uid="uid://dbo15x86u6hyx" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_8.png" id="21_mgcb8"]
+[ext_resource type="Texture2D" uid="uid://cqkdd7xxjuh42" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_9.png" id="22_6hb1m"]
+[ext_resource type="Texture2D" uid="uid://ebjyspx52pd0" path="res://assets/Mellodee Monroe/Incorrect_Disagree/Mellodee_Disagree_10.png" id="23_1fi6b"]
+[ext_resource type="Texture2D" uid="uid://bwju5qpcurdtu" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_1.png" id="24_eng0h"]
+[ext_resource type="Texture2D" uid="uid://cvapgmofg8jvy" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_2.png" id="25_3eikg"]
+[ext_resource type="Texture2D" uid="uid://ckl7o2p4l37bl" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_3.png" id="26_oend6"]
+[ext_resource type="Texture2D" uid="uid://bvc0jjqcrvlv4" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_4.png" id="27_t1ble"]
+[ext_resource type="Texture2D" uid="uid://uxhg4trxr0qk" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_5.png" id="28_8jw5m"]
+[ext_resource type="Texture2D" uid="uid://co4cb05mh3dol" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_6.png" id="29_84pmq"]
+[ext_resource type="Texture2D" uid="uid://7udopalg2gdc" path="res://assets/Mellodee Monroe/Idle/Mellodee_Idle_7.png" id="30_yuwil"]
+[ext_resource type="Texture2D" uid="uid://bhheemug3emgw" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_1.png" id="31_ncrb8"]
+[ext_resource type="Texture2D" uid="uid://cnye0itjiscnn" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_2.png" id="32_jjmiq"]
+[ext_resource type="Texture2D" uid="uid://cod1uvuxhw5jq" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_3.png" id="33_t0he1"]
+[ext_resource type="Texture2D" uid="uid://bxabkeogf432a" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_4.png" id="34_jxqr5"]
+[ext_resource type="Texture2D" uid="uid://b4s05jmoh0re" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_5.png" id="35_768ep"]
+[ext_resource type="Texture2D" uid="uid://b25w4dvw068uq" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_6.png" id="36_xud7k"]
+[ext_resource type="Texture2D" uid="uid://dqpmipe645wem" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_7.png" id="37_mknco"]
+[ext_resource type="Texture2D" uid="uid://v5ce26a1v4w0" path="res://assets/Mellodee Monroe/Neutral/Mellodee_Neutral_8.png" id="38_gcce2"]
+[ext_resource type="Script" uid="uid://dou1qeyoi3l0x" path="res://system/candidate.gd" id="39_jfsrt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bgf08"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i6780")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qq3nx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3aawc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_icqdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cot2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dlx0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1mqjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_j4g47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fjnu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6i77c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nuxpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_15dsw")
+}],
+"loop": false,
+"name": &"agree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_2q44q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2slmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yfjfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6sq3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ac8qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6ro5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ijqhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_mgcb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6hb1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_1fi6b")
+}],
+"loop": false,
+"name": &"disagree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_eng0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3eikg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_oend6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_t1ble")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_8jw5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_84pmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_yuwil")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_ncrb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_jjmiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_t0he1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_jxqr5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_768ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_xud7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_mknco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_gcce2")
+}],
+"loop": false,
+"name": &"neutral",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("39_jfsrt")
+candidate_name = "Mellodee Monroe"
+frames = SubResource("SpriteFrames_bgf08")
+background = ExtResource("1_vokaf")
+metadata/_custom_type_script = "uid://dou1qeyoi3l0x"

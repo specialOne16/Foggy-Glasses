@@ -1,0 +1,186 @@
+[gd_resource type="Resource" script_class="CandidateData" format=3 uid="uid://cnvs5aydtk4g3"]
+
+[ext_resource type="Script" uid="uid://dou1qeyoi3l0x" path="res://system/candidate.gd" id="1_onx7q"]
+[ext_resource type="Texture2D" uid="uid://cijykmiseui3r" path="res://assets/Sami Mansur/Sami_BlurredBg.png" id="1_vydfd"]
+[ext_resource type="Texture2D" uid="uid://c6q6iyx2oxdji" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-1.png" id="2_slimn"]
+[ext_resource type="Texture2D" uid="uid://djtuo1qh2ht5i" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-2.png" id="3_t6c21"]
+[ext_resource type="Texture2D" uid="uid://cs84xfla3bxj0" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-3.png" id="4_srnqv"]
+[ext_resource type="Texture2D" uid="uid://b44b5atmi4t5r" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-4.png" id="5_23lv1"]
+[ext_resource type="Texture2D" uid="uid://bw8s00mji5ola" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-5.png" id="6_34n1v"]
+[ext_resource type="Texture2D" uid="uid://1wf5t0ga7wkp" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-6.png" id="7_hmond"]
+[ext_resource type="Texture2D" uid="uid://bex6bmulq0fb7" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-7.png" id="8_echqv"]
+[ext_resource type="Texture2D" uid="uid://d11wq4nfqb0ux" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-8.png" id="9_g3dlp"]
+[ext_resource type="Texture2D" uid="uid://difvwkapvclbd" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-9.png" id="10_hgwtq"]
+[ext_resource type="Texture2D" uid="uid://3myiv8muprfs" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-10.png" id="11_3pbcp"]
+[ext_resource type="Texture2D" uid="uid://vr7wqeyohccq" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-11.png" id="12_46tah"]
+[ext_resource type="Texture2D" uid="uid://bqbqnlcqmpqxm" path="res://assets/Sami Mansur/Correct_Agree/Sami_Agree-12.png" id="13_irs0s"]
+[ext_resource type="Texture2D" uid="uid://bo5oj3qnu7diw" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-1.png" id="14_r4r3d"]
+[ext_resource type="Texture2D" uid="uid://y4jpjhekwjr" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-2.png" id="15_dl7fk"]
+[ext_resource type="Texture2D" uid="uid://dvw8f3dksj6yg" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-3.png" id="16_b44ja"]
+[ext_resource type="Texture2D" uid="uid://cdjgi2pw5ggbi" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-4.png" id="17_oeycy"]
+[ext_resource type="Texture2D" uid="uid://cjnndc2ukyu8t" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-5.png" id="18_ss7u4"]
+[ext_resource type="Texture2D" uid="uid://u8lvhuqpbtnb" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-6.png" id="19_ddjtj"]
+[ext_resource type="Texture2D" uid="uid://csoi7jjpll7c4" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-7.png" id="20_825px"]
+[ext_resource type="Texture2D" uid="uid://cmshq3follwk8" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-8.png" id="21_5e8hn"]
+[ext_resource type="Texture2D" uid="uid://ccd5uvk57mt70" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-9.png" id="22_jjij3"]
+[ext_resource type="Texture2D" uid="uid://cq62hyp5y41j6" path="res://assets/Sami Mansur/Incorrect_Disagree/Sami_Disagree-10.png" id="23_l8mep"]
+[ext_resource type="Texture2D" uid="uid://8xcf377rks0h" path="res://assets/Sami Mansur/Idle/Sami_Idle-1.png" id="24_k4ki5"]
+[ext_resource type="Texture2D" uid="uid://dngbc3412p0lq" path="res://assets/Sami Mansur/Idle/Sami_Idle-2.png" id="25_3l61p"]
+[ext_resource type="Texture2D" uid="uid://bpdwjlnw11kyf" path="res://assets/Sami Mansur/Idle/Sami_Idle-3.png" id="26_8j6go"]
+[ext_resource type="Texture2D" uid="uid://ciqpywuxr3x28" path="res://assets/Sami Mansur/Idle/Sami_Idle-4.png" id="27_erlhr"]
+[ext_resource type="Texture2D" uid="uid://ddvxlqpv3awti" path="res://assets/Sami Mansur/Idle/Sami_Idle-5.png" id="28_3475v"]
+[ext_resource type="Texture2D" uid="uid://cia28gqkckghm" path="res://assets/Sami Mansur/Idle/Sami_Idle-6.png" id="29_4l7og"]
+[ext_resource type="Texture2D" uid="uid://bihvrct1luxql" path="res://assets/Sami Mansur/Idle/Sami_Idle-7.png" id="30_qnkai"]
+[ext_resource type="Texture2D" uid="uid://c8xmjdxsbd4ii" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-1.png" id="31_6aiuk"]
+[ext_resource type="Texture2D" uid="uid://bx1nfwmf6wxxc" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-2.png" id="32_8hc70"]
+[ext_resource type="Texture2D" uid="uid://damg6vkmfjqfq" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-3.png" id="33_2hohb"]
+[ext_resource type="Texture2D" uid="uid://b51p0e3mrydvl" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-4.png" id="34_qoynr"]
+[ext_resource type="Texture2D" uid="uid://btvdvksplcdqx" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-5.png" id="35_1d2h1"]
+[ext_resource type="Texture2D" uid="uid://dybia0as8qouo" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-6.png" id="36_b23hr"]
+[ext_resource type="Texture2D" uid="uid://bffxqnf0mufj7" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-7.png" id="37_wajy3"]
+[ext_resource type="Texture2D" uid="uid://dbsf5rv17tnle" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-8.png" id="38_0c3yi"]
+[ext_resource type="Texture2D" uid="uid://cn3yf8dxc2qtf" path="res://assets/Sami Mansur/Neutral/Sami_Neutral-9.png" id="39_smqcc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xl1dr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_slimn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_t6c21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_srnqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_23lv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_34n1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hmond")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_echqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_g3dlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hgwtq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3pbcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_46tah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_irs0s")
+}],
+"loop": false,
+"name": &"agree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_r4r3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_dl7fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b44ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_oeycy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ss7u4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ddjtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_825px")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5e8hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_jjij3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_l8mep")
+}],
+"loop": false,
+"name": &"disagree",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_k4ki5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3l61p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_8j6go")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_erlhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_3475v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_4l7og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_qnkai")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_6aiuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8hc70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2hohb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_qoynr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_1d2h1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_b23hr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_wajy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_0c3yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_smqcc")
+}],
+"loop": false,
+"name": &"neutral",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_onx7q")
+candidate_name = "Sami Mansur"
+frames = SubResource("SpriteFrames_xl1dr")
+background = ExtResource("1_vydfd")
+metadata/_custom_type_script = "uid://dou1qeyoi3l0x"
