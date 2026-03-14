@@ -1,5 +1,7 @@
 extends Node
 
+@onready var deal_success: AudioStreamPlayer = $DealSuccess
+@onready var neutral: AudioStreamPlayer = $Neutral
 @onready var failure: AudioStreamPlayer = $Failure
 @onready var in_a_blur_1_: AudioStreamPlayer = $"InABlur(1)"
 @onready var main_menu_credits_theme: AudioStreamPlayer = $MainMenuCreditsTheme

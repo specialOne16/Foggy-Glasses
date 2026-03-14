@@ -1,5 +1,9 @@
 extends Control
 
+const LOSE_SCREEN_MORE_DEALS = preload("uid://bvefah3cu0hii")
+const LOSE_SCREEN_NERVES = preload("uid://cnabi5l0j7tjy")
+const WIN_SCREEN = preload("uid://dorr86l6laj2t")
+
 @onready var persons = [%Person1, %Person2, %Person3, %Person4, %Person5]
 @onready var options = [%Option1, %Option2, %Option3, %Option4, %Option5]
 @onready var end_conversation: Button = $Conversation/PanelContainer/MarginContainer/Options/EndConversation
@@ -8,7 +12,7 @@ extends Control
 
 @onready var main_hall: Control = %MainHall
 @onready var conversation: Control = %Conversation
-@onready var end_game_menu: EndGameMenu = %EndGameMenu
+@onready var end_game_screen: TextureRect = %EndGameScreen
 
 @onready var conversation_background: TextureRect = $Conversation/ConversationBackground
 @onready var conversation_person: AnimatedSprite2D = $Conversation/ConversationPerson
@@ -52,6 +56,7 @@ func _candidate_selected(candidate: Candidate):
 	main_hall.visible = false
 	conversation.visible = true
 	
+	label.text = ""
 	_toggle_options(true)
 
 func _option_selected(option: Option):
@@ -65,7 +70,7 @@ func _option_selected(option: Option):
 			conversation_person.play("agree")
 		"generic": 
 			success_exchange += 1
-			AudioPlayer.success.play()
+			AudioPlayer.neutral.play()
 			conversation_person.play("neutral")
 		"incorrect": 
 			AudioPlayer.failure.play()
@@ -87,6 +92,7 @@ func _conversation_finished():
 	active_person = null
 	match 5 - success_exchange:
 		0, 1: 
+			AudioPlayer.deal_success.play()
 			nervousness_bar.value -= 10
 			member_deal += 1
 			deal_label.text = "Deal: %d" % member_deal
@@ -98,18 +104,15 @@ func _conversation_finished():
 	main_hall.visible = true
 	conversation.visible = false
 	
-	if nervousness_bar.value >= 80: end_game_menu.show_menu(
-		"Tomorrow’s Another Day",
-		"Awww sweetheart everyone gets nervous! There’s always the next market! Now come on, have some of your favorite lemonade and we will try again. I believe in you!"
-	)
-	elif member_deal >= 4: end_game_menu.show_menu(
-		"Success! Partners Found!",
-		"Look at you making friends on your own! Let’s celebrate with your favorite cakes!"
-	)
-	elif member_contacted >= 5: end_game_menu.show_menu(
-		"More Markets Ahead",
-		"I’m so proud of you honey! Next time we’ll both bring our glasses and get even more partners!"
-	)
+	if nervousness_bar.value >= 80: 
+		end_game_screen.texture = LOSE_SCREEN_NERVES
+		end_game_screen.visible = true
+	elif member_deal >= 4: 
+		end_game_screen.texture = WIN_SCREEN
+		end_game_screen.visible = true
+	elif member_contacted >= 5: 
+		end_game_screen.texture = LOSE_SCREEN_MORE_DEALS
+		end_game_screen.visible = true
 
 func _toggle_options(option_visible: bool, final: bool = false):
 	if active_person == null: return

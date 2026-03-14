@@ -10,13 +10,8 @@
 [ext_resource type="Resource" uid="uid://cnvs5aydtk4g3" path="res://contents/Sami Mansur.tres" id="6_2okcp"]
 [ext_resource type="Resource" uid="uid://bx7e40hxn3630" path="res://contents/Ayu Salman.tres" id="7_vyivm"]
 [ext_resource type="Script" uid="uid://dge6jk2puryar" path="res://gameplay/components/option.gd" id="8_r5as3"]
-[ext_resource type="PackedScene" uid="uid://b0cree4edurk4" path="res://gameplay/end_game_menu.tscn" id="10_nimes"]
-[ext_resource type="Shader" uid="uid://c3q8hvittqeq2" path="res://gameplay/gameplay.gdshader" id="20_b2kny"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_y3ygr"]
-shader = ExtResource("20_b2kny")
-shader_parameter/strength = 4.00000018674012
-shader_parameter/mix_percentage = 0.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vyivm"]
 load_path = "res://.godot/imported/Asahi_Bg.PNG-89370b41b8f0e9f5bec31461a7088721.ctex"
@@ -275,13 +270,6 @@ label = NodePath("../MarginContainer/Options/Label")
 [node name="Overlay" type="CanvasLayer" parent="." unique_id=657021893]
 layer = 2
 
-[node name="EndGameMenu" parent="Overlay" unique_id=1972742825 instance=ExtResource("10_nimes")]
-unique_name_in_owner = true
-offset_left = -603.0
-offset_top = -331.0
-offset_right = 603.0
-offset_bottom = 235.0
-
 [node name="VBoxContainer" type="VBoxContainer" parent="Overlay" unique_id=1548569406]
 offset_left = 12.0
 offset_top = 12.0
@@ -305,9 +293,9 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Fast Dialogue"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1532164028]
-material = SubResource("ShaderMaterial_y3ygr")
-layout_mode = 1
+[node name="EndGameScreen" type="TextureRect" parent="Overlay" unique_id=1525075643]
+unique_name_in_owner = true
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

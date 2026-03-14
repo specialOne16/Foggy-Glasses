@@ -1,14 +1,22 @@
 [gd_scene format=3 uid="uid://k7jpxfkife7w"]
 
 [ext_resource type="Script" uid="uid://c5kov5akk6o5g" path="res://audios/audio_player.gd" id="1_hkbiq"]
+[ext_resource type="AudioStream" uid="uid://tb75bt8ln7vc" path="res://audios/Deal_success.wav" id="2_a3shk"]
 [ext_resource type="AudioStream" uid="uid://dgbpq46b0ykhv" path="res://audios/Failure.wav" id="2_jik1c"]
 [ext_resource type="AudioStream" uid="uid://cqmiquulm5m48" path="res://audios/In_a_Blur (1).mp3" id="3_a3shk"]
+[ext_resource type="AudioStream" uid="uid://cj2qv0c57lk1s" path="res://audios/Neutral.wav" id="3_nrfsp"]
 [ext_resource type="AudioStream" uid="uid://cetuer76csp7b" path="res://audios/Main_MenuCredits_theme.mp3" id="4_nrfsp"]
 [ext_resource type="AudioStream" uid="uid://dqhi15qyi05ln" path="res://audios/pop.wav" id="5_frmbq"]
 [ext_resource type="AudioStream" uid="uid://dr7apeqebgucj" path="res://audios/Success.wav" id="6_bt7n3"]
 
 [node name="AudioPlayer" type="Node" unique_id=2114970179]
 script = ExtResource("1_hkbiq")
+
+[node name="DealSuccess" type="AudioStreamPlayer" parent="." unique_id=1933274070]
+stream = ExtResource("2_a3shk")
+
+[node name="Neutral" type="AudioStreamPlayer" parent="." unique_id=1250120269]
+stream = ExtResource("3_nrfsp")
 
 [node name="Failure" type="AudioStreamPlayer" parent="." unique_id=117045034]
 stream = ExtResource("2_jik1c")
